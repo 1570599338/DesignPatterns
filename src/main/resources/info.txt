@@ -4,3 +4,61 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/username/xxx.git
 git push -u origin master
+
+# 设计模式的内容
+
+A.创建模式
+        1、设计模式之 Factory(工厂方法和抽象工厂)
+                使用工厂模式就象使用 new 一样频繁.
+
+        2、设计模式之 Prototype(原型)
+                用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。
+        3、设计模式之 Builder
+                汽车由车轮 方向盘 发动机很多部件组成，同时，将这些部件组装成汽车也是一件复杂的工作， Builder 模式就是将这两种情况分开进行。
+        4、设计模式之 Singleton(单态)
+                保证一个类只有一个实例,并提供一个访问它的全局访问点
+
+B.结构模式
+        1、设计模式之 Facade
+                可扩展的使用 JDBC 针对不同的数据库编程,Facade 提供了一种灵活的实现.
+        2、设计模式之 Proxy
+                以 Jive 为例,剖析代理模式在用户级别授权机制上的应用
+        3、设计模式之 Adapter
+                使用类再生的两个方式:组合(new)和继承(extends),这个已经在"thinking in java"中提到过.
+        4、设计模式之 Composite
+                就是将类用树形结构组合成一个单位.你向别人介绍你是某单位，你是单位中的一个元素，别人和你做买卖，相当于和单位做买卖。文章中还对 Jive 再进行了剖析。
+        5、设计模式之 Decorator
+                Decorator 是个油漆工,给你的东东的外表刷上美丽的颜色.
+        6、设计模式之 Bridge
+                将"牛郎织女"分开(本应在一起,分开他们,形成两个接口),在他们之间搭建一个桥(动态的结合)
+        7、设计模式之 Flyweight
+                提供 Java 运行性能,降低小而大量重复的类的开销.
+
+C.行为模式
+        1、设计模式之 Template
+                实际上向你介绍了为什么要使用 Java 抽象类,该模式原理简单,使用很普遍.
+        2、设计模式之 Memento
+                很简单一个模式,就是在内存中保留原来数据的拷贝.
+        3、设计模式之 Observer
+                介绍如何使用 Java API 提供的现成 Observer
+        4、设计模式之 Chain of Responsibility
+                各司其职的类串成一串,好象击鼓传花,当然如果自己能完成,就不要推委给下一个.
+        5、设计模式之 Command
+                什么是将行为封装,Command 是最好的说明.
+        6、设计模式之 State
+                状态是编程中经常碰到的实例,将状态对象化,设立状态变换器,便可在状态中轻松切换.
+        7、设计模式之 Strategy
+                不同算法各自封装,用户端可随意挑选需要的算法.
+        8、设计模式之 Mediator
+                Mediator 很象十字路口的红绿灯,每个车辆只需和红绿灯交互就可以.
+        9、设计模式之 Interpreter
+                主要用来对语言的分析,应用机会不多.
+        10、设计模式之 Visitor
+                访问者在进行访问时,完成一系列实质性操作,而且还可以扩展.
+        11、设计模式之 Iterator
+                这个模式已经被整合入 Java 的 Collection.在大多数场合下无需自己制造一个 Iterator,只要将对象装入Collection中，直接使用 Iterator进行对象遍历
+
+
+
+
+
