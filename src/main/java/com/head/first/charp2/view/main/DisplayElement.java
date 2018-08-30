@@ -5,7 +5,7 @@ package com.head.first.charp2.view.main;
  */
 public interface DisplayElement {
     /**
-     * 当不高板需要显示时，调此方法
+     * 当布告板需要显示时，调此方法
      */
     public void  dislay();
 }

@@ -60,8 +60,28 @@ public class WeatherData implements Subject{
     public void notifyObservers() {
         for (int i = 0; i <observers.size() ; i++) {
             Observer observer= (Observer)observers.get(i);
+            observer.update(temperature,humidity,pressure);
         }
 
 
     }
+
+
+    /**
+     * 当从气象站得到更新观测值时，
+     * 通知观察者
+     */
+    public void  measurementsChanged(){
+        this.notifyObservers();
+    }
+
+
+    public  void setMeasurements(float temperature,float humidity,float pressure){
+        this.temperature=temperature;
+        this.humidity=humidity;
+        this.pressure=pressure;
+        measurementsChanged();
+    }
+
+    // WeatherData的其他方法
 }
