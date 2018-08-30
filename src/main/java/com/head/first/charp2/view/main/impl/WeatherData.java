@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class WeatherData implements Subject{
 
     //记录观察者
-    private ArrayList observers;
+    private ArrayList<Observer> observers;
     private float temperature;
     private float humidity;
     private float pressure;
