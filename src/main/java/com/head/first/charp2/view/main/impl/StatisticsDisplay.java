@@ -31,7 +31,7 @@ public class StatisticsDisplay implements Observer,DisplayElement {
      * 当布告板需要显示时，调此方法
      */
     @Override
-    public void dislay() {
+    public void display() {
 
         System.out.println("版本二当前环境："+temperature+"F degress and " + humidity+ "% humidity");
 
@@ -48,6 +48,6 @@ public class StatisticsDisplay implements Observer,DisplayElement {
     public void update(float temp, float humidity, float pressure) {
         this.temperature=temp;
         this.humidity= humidity;
-        dislay();
+        display();
     }
 }

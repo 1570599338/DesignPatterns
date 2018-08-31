@@ -32,7 +32,7 @@ public class CurrentConditionsDisplay implements Observer,DisplayElement{
      * 当布告板需要显示时，调此方法
      */
     @Override
-    public void dislay() {
+    public void display() {
 
         System.out.println("当前环境："+temperature+"F degress and " + humidity+ "% humidity");
 
@@ -49,6 +49,6 @@ public class CurrentConditionsDisplay implements Observer,DisplayElement{
     public void update(float temp, float humidity, float pressure) {
         this.temperature=temp;
         this.humidity= humidity;
-        dislay();
+        display();
     }
 }

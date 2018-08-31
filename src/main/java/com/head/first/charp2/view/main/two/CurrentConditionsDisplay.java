@@ -19,12 +19,6 @@ public class CurrentConditionsDisplay implements Observer,DisplayElement {
     private float humidity;
     private Observable observable;
 
-    /**
-     * 当布告板需要显示时，调此方法
-     */
-    @Override
-    public void dislay() { }
-
 
     public CurrentConditionsDisplay(Observable observable) {
         this.observable = observable;
@@ -40,6 +34,11 @@ public class CurrentConditionsDisplay implements Observer,DisplayElement {
         }
     }
 
+
+    /**
+     * 当布告板需要显示时，调此方法
+     */
+    @Override
     public void display() {
         System.out.println("Current conditions: " + temperature
                 + "F degrees and " + humidity + "% humidity");
