@@ -6,7 +6,16 @@
 
     <groupId>com.lquan</groupId>
     <artifactId>DesignPatterns</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>design-01-uml-01-open_close</module>
+        <module>design-01-uml-02-richter_substitution</module>
+        <module>design-01-uml-03-dependence_inversion</module>
+        <module>design-01-uml-04-interface_isolation</module>
+        <module>design-01-uml-05-demeter_law</module>
+        <module>design-02-creator_mode-01-singleton</module>
+    </modules>
 
-    
+
 </project>

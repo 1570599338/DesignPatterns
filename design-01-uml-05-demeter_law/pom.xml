@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>DesignPatterns</artifactId>
+        <groupId>com.lquan</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>design-01-uml-05-demeter_law</artifactId>
+    <description>迪米特法则
+
+        例如】明星与经纪人的关系实例
+
+        明星由于全身心投入艺术，所以许多日常事务由经纪人负责处理，如和粉丝见面会，
+        和媒体公司的业务洽谈等。这里的经纪人是明星的朋友，而粉丝和媒体公司是陌生人，所以适合使用迪米特法则。
+
+
+    </description>
+
+
+</project>

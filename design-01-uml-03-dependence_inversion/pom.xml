@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>DesignPatterns</artifactId>
+        <groupId>com.lquan</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>design-01-uml-03-dependence_inversion</artifactId>
+    <description>
+        依赖倒转原则
+
+        【例如】组装电脑
+
+
+        现要组装一台电脑，需要配件cpu、硬盘、内存条。只有这些配置都有了，计算机才能正常的运行。
+        选择cpu有多选择，如Intel、AMD等，
+        硬盘可以选择希捷，西数等，
+        内存条可以选择金士顿，海盗船等。
+
+
+    </description>
+
+
+</project>

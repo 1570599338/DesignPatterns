@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>DesignPatterns</artifactId>
+        <groupId>com.lquan</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>design-01-uml-04-interface_isolation</artifactId>
+    <description>接口隔离原则
+
+
+        【例如】安全门案例
+        我们需要创建一个黑马品牌的安全门，该安全门具有防火、防水、防盗的功能。可以将防火、防水、防盗功能提取到一个接口。形成一套规范
+
+
+
+        问题
+
+        上面的设计我们发现它存在的问题，黑马品牌的安全门具有防火、防水、防盗的功能。现在如果我们还需要再创建一个传智品牌的安全门，
+        而该安全门只具有防盗、防水功能呢？很显然如果实现SafetyDoor接口就违背了接口隔离原则，那么我们如何进行修改呢
+
+
+    </description>
+
+
+</project>
