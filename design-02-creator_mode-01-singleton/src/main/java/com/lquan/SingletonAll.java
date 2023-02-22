@@ -1,6 +1,5 @@
 package com.lquan;
 
-import com.lquan.fanshe.resolve.Singlenton;
 
 import java.io.Serializable;
 
@@ -10,32 +9,49 @@ import java.io.Serializable;
  * @author: lquan
  * @create: 2023-02-21 22:18
  **/
-public class SingletonAll  {
+public class SingletonAll implements Serializable {
+
+    // 红绿灯法，标识位
+    private  static boolean  isfanshe = false;
 
     private static  volatile SingletonAll instance;
 
     // 1、构造方法私有化
     private  SingletonAll(){
-        if(instance!=null){
+
+        /**
+         * 防止反射造成对单例的破坏，进而实例化的单例问题
+         *      此种方法为解决高并发和性能问题而设计的
+         */
+        if(isfanshe){
             throw  new RuntimeException("单例出错了啦！");
+        }
+        if (!isfanshe){
+            synchronized (SingletonAll.class){
+                if(isfanshe){
+                    throw  new RuntimeException("单例出错了啦！");
+                }
+                isfanshe=true;
+            }
         }
     }
 
-
+    private static class SingletonHolder {
+        private static final SingletonAll INSTANCE = new SingletonAll();
+    }
 
 
     // 3、对外提供实例对象
     public static  SingletonAll getInstance(){
 
-        if(instance==null){
-
-            synchronized (SingletonAll.class){
-
-                if (instance==null){
-                    instance = new SingletonAll();
-                }
-            }
-        }
-        return instance;
+       return  SingletonHolder.INSTANCE;
     }
+
+
+
+    private  Object readResolve(){
+        return SingletonHolder.INSTANCE;
+    }
+
+
 }
