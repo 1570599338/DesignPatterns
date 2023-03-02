@@ -15,6 +15,7 @@
         <module>design-01-uml-04-interface_isolation</module>
         <module>design-01-uml-05-demeter_law</module>
         <module>design-02-creator_mode-01-singleton</module>
+        <module>design-02-creator_mode-02-factory</module>
     </modules>
 
 
