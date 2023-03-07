@@ -10,9 +10,21 @@ package com.lquan.fanshe.resolve;
  **/
 public class Singlenton {
 
+    // 红绿灯法，标识位
+    private  static boolean  isfanshe = false;
+
     private Singlenton(){
-        if(singlenton!=null){
-           throw  new RuntimeException();
+
+        if(isfanshe){
+            throw  new RuntimeException("单例反射出问题了");
+        }
+        if (!isfanshe){
+            synchronized (Singlenton.class){
+                if(isfanshe){
+                    throw  new RuntimeException("单例出错了啦！");
+                }
+                isfanshe=true;
+            }
         }
     }
 
